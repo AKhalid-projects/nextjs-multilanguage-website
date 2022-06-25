@@ -12,7 +12,14 @@ const Navigation = ({ locale, locales, defaultLocale }) => {
     en: "About",
     es: "Acerca",
   };
-
+  const resolveCourses = {
+    en: "Courses",
+    es: "Courses",
+  };
+  const resolveContact = {
+    en: "Contact",
+    es: "Contact",
+  };
   const defaultRoot = locale === defaultLocale ? "/" : `/${locale}/`;
   return (
     <header className="w-full bg-white">
@@ -38,8 +45,8 @@ const Navigation = ({ locale, locales, defaultLocale }) => {
             </Link>
           </div>
           <div className="text-black">
-            <p className="text-lg">Storyblok</p>
-            <p>NextJS Demo</p>
+            <p className="text-lg">Gulf English Academy</p>
+            <p>Starter Demo v1.8</p>
           </div>
           <div className="ml-auto md:hidden">
             <button
@@ -68,6 +75,20 @@ const Navigation = ({ locale, locales, defaultLocale }) => {
               <li>
                 <Link href={`${defaultRoot}blog`}>
                   <a className="block px-4 py-1 md:p-2 lg:px-8">Blog</a>
+                </Link>
+              </li>
+              <li>
+                <Link href={`${defaultRoot}courses`}>
+                  <a className="block px-4 py-1 md:p-2 lg:px-8">
+                  {resolveCourses[locale]}
+                    </a>
+                </Link>
+              </li>
+              <li>
+                <Link href={`${defaultRoot}contact`}>
+                  <a className="block px-4 py-1 md:p-2 lg:px-8">
+                  {resolveContact[locale]}
+                    </a>
                 </Link>
               </li>
               <li>

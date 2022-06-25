@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="text-center flex flex-col items-center py-20 container mx-auto">
-      <p>Next.js Demo Website created with Storyblok</p>
+      <p>Demo Website created with Storyblok for Gulf English Academy</p>
       <div className="flex items-center my-8">
         <img
           src="https://a.storyblok.com/f/51376/3856x824/fea44d52a9/colored-full.png"
@@ -19,11 +19,6 @@ const Footer = () => {
           </g>
         </svg>
       </div>
-      <p className="underline">
-        <a href="https://www.storyblok.com/tp/next-js-react-guide">
-          View tutorial on Storyblok
-        </a>
-      </p>
     </footer>
   );
 };
