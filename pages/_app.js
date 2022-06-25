@@ -22,7 +22,7 @@ const components = {
 };
 
 storyblokInit({
-  accessToken: "s40O76hJJWISurNNXLrOVQtt",
+  accessToken: process.env.STORYBLOK_API_KEY,
   use: [apiPlugin],
   components,
 });
