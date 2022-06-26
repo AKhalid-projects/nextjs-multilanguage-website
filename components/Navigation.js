@@ -99,7 +99,7 @@ const Navigation = ({ locale, locales, defaultLocale }) => {
                 </Link>
               </li>
             </ul>
-            <ul className="flex flex-col mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:border-0">
+            <ul className="flex flex-col hidden mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:border-0">
               {locales.map((loc) => {
                 const { pathname, query, asPath } = router;
                 return (
