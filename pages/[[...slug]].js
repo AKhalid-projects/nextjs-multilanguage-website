@@ -7,7 +7,7 @@ import {
 
 export default function Page({ story, locale, locales, defaultLocale }) {
   story = useStoryblokState(story, {
-    resolveRelations: ["featured-posts.posts", "selected-posts.posts"],
+    resolveRelations: ["featured-posts.posts", "selected-posts.posts","featured-courses.courses", "selected-courses.courses"],
     language: locale,
   });
 
@@ -28,7 +28,7 @@ export async function getStaticProps({
 
   let sbParams = {
     version: "draft",
-    resolve_relations: ["featured-posts.posts", "selected-posts.posts"],
+    resolve_relations: ["featured-posts.posts", "selected-posts.posts", "featured-courses.courses", "selected-courses.courses" ],
     language: locale,
   };
 
