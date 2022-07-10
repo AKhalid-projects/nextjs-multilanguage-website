@@ -61,30 +61,37 @@ function MobileNavigation() {
                 className="absolute inset-x-0 top-full mt-4 origin-top space-y-4 rounded-2xl bg-white p-6 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
               >
                 <li>
-                  <Link href="#features">
+                  <Link href="/">
                     <a className="block w-full" onClick={() => close()}>
-                      Features
+                      Home
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#testimonials">
+                  <Link href="/about">
                     <a className="block w-full" onClick={() => close()}>
-                      Testimonials
+                      About
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#pricing">
+                  <Link href="/contact">
                     <a className="block w-full" onClick={() => close()}>
-                      Pricing
+                      Contact
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#pricing">
+                  <Link href="/courses">
                     <a className="block w-full" onClick={() => close()}>
                       Courses
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog">
+                    <a className="block w-full" onClick={() => close()}>
+                      Blog
                     </a>
                   </Link>
                 </li>

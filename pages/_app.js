@@ -12,6 +12,10 @@ import Teaser  from "../components/Teaser";
 import FeaturedCourses from "../components/FeaturedCourses";
 import Course from "../components/Course";
 import CoursesList from "../components/CoursesList";
+import { PrimaryFeatures } from "../components/PrimaryFeatures";
+import AboutSection from "../components/AboutSection";
+import ContactSection from "../components/ContactSection";
+
 
 const components = {
   feature: Feature,
@@ -27,9 +31,14 @@ const components = {
 
   "selected-posts": PostsList,
   "selected-courses": CoursesList,
+
+  "about-section": AboutSection,
+  "contact-section": ContactSection,
   
   teaser: Teaser,
   text: Text,
+
+  hero: PrimaryFeatures,
 };
 
 storyblokInit({

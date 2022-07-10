@@ -10,6 +10,8 @@ import academicEnglishCourses from "../images/screenshots/academic-english-cours
 import screenshotVatReturns from "../images/screenshots/business-english-courses.jpg";
 import kidsOnlineCourses from "../images/screenshots/kids-online-courses.jpg";
 
+import { storyblokEditable } from "@storyblok/react";
+
 const features = [
   {
     title: "General English Courses",
@@ -37,7 +39,7 @@ const features = [
   },
 ];
 
-export function PrimaryFeatures() {
+export function PrimaryFeatures({ blok }) {
   let [tabOrientation, setTabOrientation] = useState("horizontal");
 
   useEffect(() => {
@@ -77,11 +79,10 @@ export function PrimaryFeatures() {
             id="features-title"
             className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl"
           >
-            Everything you need to level-up your language.
+            {blok.title}
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Discover the plans that include everything you need to take your
-            English to the next level.
+            {blok.intro}
           </p>
         </div>
         <Tab.Group
