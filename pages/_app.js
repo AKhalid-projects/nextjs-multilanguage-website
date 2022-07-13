@@ -15,6 +15,7 @@ import CoursesList from "../components/CoursesList";
 import { PrimaryFeatures } from "../components/PrimaryFeatures";
 import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
+import Hero from "../components/Hero";
 
 
 const components = {
@@ -38,7 +39,7 @@ const components = {
   teaser: Teaser,
   text: Text,
 
-  hero: PrimaryFeatures,
+  hero: Hero,
 };
 
 storyblokInit({

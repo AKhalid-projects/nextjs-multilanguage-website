@@ -154,12 +154,12 @@ export function Header() {
               </Link>
             </li>
             <li className="ml-auto hidden md:block">
-              <ButtonLink href="#get-started-today" color="white">
+              <ButtonLink href="/about" color="white">
                 <span>About us</span>
               </ButtonLink>
             </li>
             <li className="ml-auto md:ml-8">
-              <ButtonLink href="#get-started-today" color="blue">
+              <ButtonLink href="/courses" color="blue">
                 <span>
                   Get started<span className="hidden lg:inline"> today</span>
                 </span>

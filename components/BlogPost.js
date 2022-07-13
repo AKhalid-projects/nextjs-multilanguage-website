@@ -6,7 +6,7 @@ const BlogPost = ({ blok }) => {
     <div {...storyblokEditable(blok)}>
       <div className="bg-white-half w-full">
         <div className="max-w-3xl mx-auto text-center pt-20 flex flex-col items-center">
-          <h1 className="text-5xl font-bold font-serif text-primary tracking-wide">
+          <h1 className="text-5xl font-bold text-primary tracking-wide">
             {blok.title}
           </h1>
           <p className="text-gray-500 text-lg max-w-lg">{blok.intro}</p>
